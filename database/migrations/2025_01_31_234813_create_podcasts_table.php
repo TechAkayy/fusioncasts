@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('podcasts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('slug')->default('');
             $table->string('author');
             $table->string('image');
             $table->boolean('favorited')->default(false);
