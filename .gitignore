@@ -21,3 +21,24 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+#.gitignore, .eslintignore, .prettierignore
+
+# Pinegrow temp folders
+_pg*
+
+## optional
+# pinegrow.json
+
+
+## optional
+## Uncomment the below as per your needs
+## add any d.ts files that are auto-generated, for eg,
+# auto-imports.d.ts
+# components.d.ts
+# composables.d.ts
+## rollup visualizer
+stats.html
+.vapor/
+.env.production
+.env.staging

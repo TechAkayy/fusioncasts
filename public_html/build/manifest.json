@@ -1,0 +1,49 @@
+{
+  "_ActionFactory-BCNVM2d8.js": {
+    "file": "assets/ActionFactory-BCNVM2d8.js",
+    "name": "ActionFactory",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/ActionFactory-DQzz_BmP.css"
+    ]
+  },
+  "_ActionFactory-DQzz_BmP.css": {
+    "file": "assets/ActionFactory-DQzz_BmP.css",
+    "src": "_ActionFactory-DQzz_BmP.css"
+  },
+  "resources/js/Pages/Index.vue": {
+    "file": "assets/Index-C9cuRfbz.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ActionFactory-BCNVM2d8.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/Pages/[Podcast].vue": {
+    "file": "assets/_Podcast_-69LQ3E24.js",
+    "name": "_Podcast_",
+    "src": "resources/js/Pages/[Podcast].vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ActionFactory-BCNVM2d8.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-MEfRq2ZK.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Index.vue",
+      "resources/js/Pages/[Podcast].vue"
+    ],
+    "css": [
+      "assets/app-CZtVkhj4.css"
+    ]
+  }
+}

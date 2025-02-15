@@ -1,9 +1,12 @@
 {
     "compilerOptions": {
+        "module": "ESNext",
         "baseUrl": ".",
         "paths": {
             "$fusion/*": ["storage/fusion/JavaScript/*"],
             "@/*": ["resources/js/*"],
+            "~/*": ["resources/js/*"],
+            "~~/*": ["./*"],
             "ziggy-js": ["./vendor/tightenco/ziggy"]
         }
     },

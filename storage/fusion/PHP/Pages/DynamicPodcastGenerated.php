@@ -10,11 +10,12 @@ use App\Models\Podcast;
 class DynamicPodcastGenerated extends \Fusion\FusionPage
 {
     #[\Fusion\Attributes\ServerOnly]
-    public array $discoveredProps = ['podcast'];
+    public array $discoveredProps = ['slug', 'podcastsRaw'];
     use \Fusion\Concerns\IsProceduralPage;
     public function runProceduralCode()
     {
-        $podcast = $this->prop(name: 'podcast')->fromRoute(class: Podcast::class)->value();
+        $slug = $this->prop(name: 'slug')->fromRoute('podcast')->value();
+        $podcastsRaw = $this->prop(name: 'podcastsRaw', default: fn() => Podcast::all())->value();
         $this->syncProps(get_defined_vars());
     }
 }

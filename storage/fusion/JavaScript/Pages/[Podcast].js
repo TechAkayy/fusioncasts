@@ -2,7 +2,7 @@ import Pipeline from '@fusion/vue/pipeline';
 import ActionFactory from '@fusion/vue/actionFactory';
 
 
-export const state = ["podcast"];
+export const state = ["slug", "podcastsRaw"];
 export const actions = [];
 export const fusionActions = ["fusionSync"];
 
