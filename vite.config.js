@@ -11,6 +11,20 @@ import presetIcons from "@unocss/preset-icons";
 
 export default defineConfig({
     plugins: [
+        fusion(),
+        laravel({
+            input: ["resources/js/app.js", "resources/css/app.css"],
+            ssr: "resources/js/ssr.js",
+            refresh: true,
+        }),
+        vue({
+            template: {
+                transformAssetUrls: {
+                    base: null,
+                    includeAbsolute: false,
+                },
+            },
+        }),
         // liveDesigner({
         //     devServerUrls: {
         //         /* Please ensure that you update this URL with the actual URL of your app-server. */
@@ -82,19 +96,6 @@ export default defineConfig({
             ],
             vueTemplate: true,
             dts: "auto-imports.d.ts",
-        }),
-        fusion(),
-        laravel({
-            input: ["resources/js/app.js", "resources/css/app.css"],
-            refresh: true,
-        }),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
         }),
         Unocss({
             presets: [
